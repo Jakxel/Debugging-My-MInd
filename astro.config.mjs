@@ -3,8 +3,6 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
-export default defineConfig({
-	site: 'https://example.com',
-	integrations: [mdx(), sitemap()],
-});
+export default {
+  site: 'https://Jakxel.github.io/debugging-my-mind', // URL de tu repositorio en GitHub Pages
+};

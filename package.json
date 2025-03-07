@@ -3,15 +3,16 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "deploy": "gh-pages -d dist",
+    "build": "astro build"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.1.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.4.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
