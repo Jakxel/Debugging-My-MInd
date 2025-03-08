@@ -3,47 +3,54 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import "bootstrap/dist/css/bootstrap.min.css";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="/src/styles/index.css">
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Galgo!</h1>
+			<section class="main-section">
+				<h1>Debugging My Mind 🧠</h1>
+				<p><strong>Welcome to my debugging zone</strong> a space where I share my personal journey exploring the fundamentals of Computer Science.</p>
+				<p>My name is <strong>Jakxel</strong>, and I am currently studying Computer Systems Engineering at the Tijuana Institute of Technology. Through this blog, I want to document not only my achievements and discoveries but also the challenges and obstacles I encounter as I dive deeper into the world of programming, engineering, and technology.</p>
+				<p>I often feel like what I study is not enough or that I am not making the necessary effort to truly understand the concepts I need. <strong>The real world demands dedication and constant effort</strong>, so this blog becomes a tool to complement my learning and delve deeper into my future as an engineer.</p>
+			</section>
+			
+			<section class="second-section">
+				<h2>Why debugging my mind?</h2>
+				<p>  
+					Just like debugging code, life sometimes requires us to "debug" our thoughts and habits. There are moments when we feel stuck or uncertain, but with patience and the right tools, we can work through these mental blocks. This blog is my effort to understand, improve, and grow—both in knowledge and mindset.
+				</p>
+			</section>
+			
+			<section class="third-section">
+				<h3>My purpose</h3>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				My goal is to build a solid foundation in Computer Science that will allow me to grow as a software engineer. I want to not only understand theory but also apply it in real-world projects. Through this blog, I will share my journey, mistakes, and discoveries with others who are on a similar path.
 			</p>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				Here, you'll find three main sections:
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
 			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
+				<li><strong>Core CS Fundamentals</strong>: Focused on key topics like algorithms, data structures, and programming principles.</li>
+				<li><strong>Software Engineering & System Design</strong>: Practical insights into software development, system architecture, and design patterns.</li>
+				<li><strong>Advanced Topics & Real-World Applications</strong>: Diving into emerging technologies like AI, machine learning, and more.</li>
 			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			</section>
+
+			<section class="fourth-section">
+				<h2>A Continuous Journey</h2>
+				<p>
+					Learning is a non-linear process. There will be progress and setbacks, but each step is a chance to improve. I hope this blog inspires and encourages others as they debug their own minds and continue their learning journey.
+				</p>
+			</section>
+			
 		</main>
 		<Footer />
 	</body>
